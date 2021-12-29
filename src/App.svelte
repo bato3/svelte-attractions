@@ -1,14 +1,12 @@
-<script lang="ts">
-	export let name: string;
+<script>
+    import { Button } from 'attractions';
 </script>
 
-<main>
+  <Button>click me</Button>
+  <main>
 	<h1>Hello {name}!</h1>
-</main>
-
-<style lang="scss">
+</main>  <style lang="scss">
     $red: #ff3e00;
-    $red: blue;
 	main {
 		text-align: center;
 		padding: 1em;
