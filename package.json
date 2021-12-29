@@ -1,0 +1,20 @@
+{
+  "name": "svelte-attractions",
+  "version": "1.0.0",
+  "description": "svelte (not kit) + attractions (UI)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bato3/svelte-attractions.git"
+  },
+  "keywords": [],
+  "author": "bato3 (work)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bato3/svelte-attractions/issues"
+  },
+  "homepage": "https://github.com/bato3/svelte-attractions#readme"
+}
