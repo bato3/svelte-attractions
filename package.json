@@ -26,8 +26,8 @@
     "url": "git+https://github.com/bato3/svelte-attractions.git"
   },
   "keywords": [
-      "svelte",
-      "attractions"
+    "svelte",
+    "attractions"
   ],
   "author": "bato3 (work)",
   "license": "ISC",
