@@ -2,9 +2,21 @@
     import { Button, TextField } from 'attractions';
     //import {}  from 'svelte-feather-icons/src/icons/AtSignIcon.svelte'
     import {AtSignIcon} from 'svelte-feather-icons';
+    import {WatsonHealth3DCursor32, CloudAlerting32, Awake32, CircleFilled32} from '@carbon/icons';
+
+    import { TouchId } from '@carbon/pictograms';
+    import  CrIcon from './components/CrIcon.svelte';
+
+
+    let name:string =  'World';
 </script>
 
   <Button>click me</Button>
+
+  <CrIcon icon={CloudAlerting32}/>
+  <CrIcon icon={Awake32}/>
+  <CrIcon icon={CircleFilled32}/>
+  <CrIcon icon={TouchId} width=16 height=16/>
 
 <TextField outline label="Username" withItem type="email">
   <AtSignIcon size="24" class="item" />
