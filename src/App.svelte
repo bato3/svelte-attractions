@@ -2,7 +2,7 @@
     import { Button, TextField } from 'attractions';
     //import {}  from 'svelte-feather-icons/src/icons/AtSignIcon.svelte'
     import {AtSignIcon} from 'svelte-feather-icons';
-    import {WatsonHealth3DCursor32, CloudAlerting32, Awake32, CircleFilled32} from '@carbon/icons';
+    import {CloudAlerting32, Awake32, CircleFilled32} from '@carbon/icons';
 
     import { TouchId } from '@carbon/pictograms';
     import  CrIcon from './components/CrIcon.svelte';

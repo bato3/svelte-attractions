@@ -1,6 +1,11 @@
 # svelte-attractions
 svelte (not kit) + attractions (UI)
 
+## Zestawy ikonek
+* [svelte-feather-icons](https://vue-feather-icons.egoist.sh/)
+* [@carbon/icons](https://carbon-icons-svelte.onrender.com/), [IBM](https://www.carbondesignsystem.com/guidelines/icons/library/)
+* [@carbon/pictograms](https://carbon-pictograms-svelte.onrender.com/), [IBM](https://www.carbondesignsystem.com/guidelines/pictograms/library/)
+
 ---
 
 # svelte app
