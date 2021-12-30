@@ -8,6 +8,7 @@ import typescript from '@rollup/plugin-typescript';
 import css from 'rollup-plugin-css-only';
 import { default as makeAttractionsImporter } from 'attractions/importer'
 import path from 'path';
+import scss from "rollup-plugin-scss";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -59,6 +60,7 @@ export default {
                 dev: !production
             }
         }),
+        scss(),
         // we'll extract any component CSS out into
         // a separate file - better for performance
         css({ output: 'bundle.css' }),
