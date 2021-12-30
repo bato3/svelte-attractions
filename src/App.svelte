@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Button, TextField } from 'attractions';
+    import { Button, TextField, H1 } from 'attractions';
     //import {}  from 'svelte-feather-icons/src/icons/AtSignIcon.svelte'
     import {AtSignIcon} from 'svelte-feather-icons';
     import {CloudAlerting32, Awake32, CircleFilled32} from '@carbon/icons';
@@ -12,19 +12,36 @@
 </script>
 
   <Button>click me</Button>
-
+<H1>
   <CrIcon icon={CloudAlerting32}/>
   <CrIcon icon={Awake32}/>
   <CrIcon icon={CircleFilled32}/>
   <CrIcon icon={TouchId} width=16 height=16/>
-
+</H1>
 <TextField outline label="Username" withItem type="email">
   <AtSignIcon size="24" class="item" />
 </TextField>
   <main>
-	<h1>Hello {name}!</h1>
+	<h1 class="something">Hello {name}!</h1>
 </main>  <style lang="scss">
-    $red: #ff3e00;
+
+    /*
+      // when you don use theme file
+      @use '~attractions/_variables' as vars;
+    //*/
+    @use 'theme' as vars;
+    @use '~attractions/_mixins';
+    @use '~attractions/_appearances';
+
+    .something {
+        color: vars.$main;
+
+        // See the source code to discover these internal mixins:
+        @include appearances.button;
+    }
+
+
+    $red: vars.$something-else;
 	main {
 		text-align: center;
 		padding: 1em;
