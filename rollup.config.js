@@ -9,6 +9,9 @@ import css from 'rollup-plugin-css-only';
 import { default as makeAttractionsImporter } from 'attractions/importer'
 import path from 'path';
 import scss from "rollup-plugin-scss";
+import postcss from 'postcss';
+import autoprefixer from 'autoprefixer';
+
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -53,14 +56,24 @@ export default {
                   includePaths: [path.join(__dirname, 'src/css')],
                 },
                 sourceMap: !production,
-
+                postcss: {
+                    plugins: [autoprefixer()]
+                }
             }),
             compilerOptions: {
                 // enable run-time checks when not in production
                 dev: !production
             }
         }),
-        scss(),
+        scss({
+            processor: () => postcss([autoprefixer()]),
+            includePaths: [
+              path.join(__dirname, './node_modules/'),
+              //'node_modules/'
+            ],
+            outputStyle: 'compressed',
+            watch: 'src/css',
+          }),
         // we'll extract any component CSS out into
         // a separate file - better for performance
         css({ output: 'bundle.css' }),
