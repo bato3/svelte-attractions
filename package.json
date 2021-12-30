@@ -12,6 +12,7 @@
   "devDependencies": {
     "@carbon/icons": "^10.44.0",
     "@carbon/pictograms": "^11.20.0",
+    "@rollup/plugin-alias": "^3.1.8",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.1",
     "@rollup/plugin-typescript": "^8.3.0",

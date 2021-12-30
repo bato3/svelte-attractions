@@ -11,7 +11,7 @@ import path from 'path';
 import scss from "rollup-plugin-scss";
 import postcss from 'postcss';
 import autoprefixer from 'autoprefixer';
-
+import alias from '@rollup/plugin-alias';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -45,6 +45,13 @@ export default {
         file: 'public/build/bundle.js'
     },
     plugins: [
+        alias({
+            entries: [
+                {
+                    find: '@c', replacement: path.join(__dirname, 'src/components')
+                }
+            ]
+        }),
         svelte({
             preprocess: sveltePreprocess({
                 scss: {

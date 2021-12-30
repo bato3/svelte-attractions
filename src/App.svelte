@@ -11,7 +11,7 @@
     import { CloudAlerting32, Awake32, CircleFilled32 } from "@carbon/icons";
 
     import { TouchId } from "@carbon/pictograms";
-    import CrIcon from "./components/CrIcon.svelte";
+    import CrIcon from "@c/CrIcon.svelte";
 
     let name: string = "World";
 </script>
