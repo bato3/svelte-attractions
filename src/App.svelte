@@ -1,5 +1,10 @@
 <script lang="ts">
-    import { TextField, H1, Button } from "attractions";
+    //import { TextField, H1, Button } from "attractions";
+
+    import { default as Button } from "attractions/button/button.svelte";
+    import { default as TextField } from "attractions/text-field/text-field.svelte";
+    import { default as H1 } from "attractions/typography/h1.svelte";
+
 
     //import {}  from 'svelte-feather-icons/src/icons/AtSignIcon.svelte'
     import { AtSignIcon } from "svelte-feather-icons";

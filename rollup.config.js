@@ -56,9 +56,9 @@ export default {
                   includePaths: [path.join(__dirname, 'src/css')],
                 },
                 sourceMap: !production,
-                postcss: {
+                /*postcss: {
                     plugins: [autoprefixer()]
-                }
+                }*/
             }),
             compilerOptions: {
                 // enable run-time checks when not in production
